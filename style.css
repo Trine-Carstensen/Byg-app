@@ -232,6 +232,18 @@ img {
     #info-box {
         padding: 16px;
     }
+
+    #info-box {
+        order: 2;
+    }
+
+    .legend {
+        order: 3;
+    }
+
+    .map-container {
+        order: 1;
+    }
 }
 
 #info-box {
