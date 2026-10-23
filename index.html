@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang=""da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aqua Vista Explorer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1> Velkommen til Auqa Vista Explorer!</h1>
+    <p>Din personlige guide til hotellet.</p>
+    <div class="filter-container">
+        <label for="category-filter">Vis på kortet:</label>
+
+        <select id="category-filter">
+            <option value="all">Alle faciliteter</option>
+            <option value="restaurant">Restauranter</option>
+            <option value="bar">Barer</option>
+            <option value="pool">Pools og vandland</option>
+            <option value="sport">Sport og aktiviteter</option>
+            <option value="wellness">Wellness</option>
+            <option value="service">Service</option>
+            <option value="underholdning">Underholdning</option>
+            <option value="butikker">butikker</option>
+        </select>
+        <label for="facility-search">Søg efter facilitet:</label>
+
+        <input 
+            type="text"
+            id="facility-search"
+            placeholder="Fx Soprano eller pool..."
+        >
+    </div>
+
+    <div class="map-layout">
+
+        <div class="map-container">
+            <img src="Hotel-map.png" alt="Kort over hotelområdet">
+        </div>
+
+        <div class="legend">
+            <h3>Signaturforklaring</h3>
+            <div class="legend-item">
+                <span class="legend-dot restaurant-dot">🍽️</span>
+                <span>Restauranter</span>
+            </div>
+            <div class="legend-item">
+                <span class="legend-dot bar-dot">🍹</span>
+                <span>Barer</span>
+            </div>
+            <div class="legend-item">
+                <span class="legend-dot pool-dot">🏊</span>
+                <span>Pools og vandland</span>
+            </div>
+            <div class="legend-item">
+                <span class="legend-dot sport-dot">⚽</span>
+                <span>Sport og aktiviteter</span>
+            </div>
+            <div class="legend-item">
+                <span class="legend-dot wellness">💆🏼‍♀️</span>
+                <span>Wellness</span>
+            </div>
+            <div class="legend-item">
+                <span class="legend-dot service-dot">ℹ️</span>
+                <span>Service</span>
+            </div>
+            <div class="legend-item">
+                <span class="legend-dot underholdning-dot">🎬</span>
+                <span>Underholdning</span>
+            </div>
+            <div class="legend-item">
+                <span class="legend-dot butikker-dot">🛍️</span>
+                <span>Butikker</span>
+            </div>
+
+    </div>
+
+    <div id="info-box">
+        <h2>Velkommen til Aqua Vista Explorer</h2>
+        <p>Klik på et punkt på kortet for at se information.</p>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

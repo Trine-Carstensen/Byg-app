@@ -1,0 +1,288 @@
+body {
+    background-color: #f0f7f5;
+    color: #173b35;
+    font-family: arial, sans-serif;
+}
+
+h1 {
+    color: #0f766e;
+}
+
+body {
+    margin: 40px;
+}
+
+img {
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+    display: block;
+}
+
+.map-container {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+}
+
+.map-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.map-marker {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border: 2px solid #0f766e;
+    border-radius: 50%;
+    width: 21px;
+    height: 21px;
+    padding: 0;
+    font-size: 12px;
+    cursor: pointer;
+    transition: transform 0.2s ease, width 0.2s ease, height 02s ease;
+    z-index: 1;
+}
+
+.map-marker:hover {
+    width: 38px;
+    height: 38px;
+    font-size: 19px;
+    z-index: 10;
+}
+
+#info-box {
+    max-width: 960px;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+#info-box h2 {
+    margin-top: 0;
+    color: #0f766e;
+}
+
+.restaurant {
+    border-color: #e67e22;
+    color: #e67e22;
+}
+
+.bar {
+    border-color: #8e44ad;
+    color: #8e44ad;
+}
+
+.pool {
+    border-color: #0284c7;
+    color: #0284c7;
+}
+
+.sport {
+    border-color: #16a34a;
+    color: #16a34a;
+}
+
+.wellness {
+    border-color: #db2777;
+    color: #db2777;
+}
+
+.service {
+    border-color: #b45309;
+    color: #b45309;
+}
+
+.underholdning {
+    border-color: #4b5563;
+    color: #4b5563;
+}
+
+.butikker {
+    border-color: #dc2626;
+    color: #dc2626;
+}
+
+.map-layout {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    max-width: 1200px;
+}
+
+.map-container {
+    flex: 1;
+    min-width: 0;
+}
+
+.legend {
+    flex: 0 0 220px;
+    margin-top: 0;
+    padding: 16px;
+    background-color: white;
+    border-radius: 12px;
+}
+
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.legend-dot {
+    flex-shrink: 0;
+    width: 30px;
+    height: 30px;
+    border: 2px solid;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+}
+
+.restaurant-dot {
+    border-color: #e67e22;
+}
+
+.bar-dot {
+    border-color: #8e44ad;
+}
+
+.pool-dot {
+    border-color: #0284c7;
+}
+
+.sport-dot {
+    border-color: #16a34a;
+}
+
+.wellness-dot {
+    border-color: #db2777;
+}
+
+.service-dot {
+    border-color: #b45309;
+}
+
+.underholdning-dot {
+    border-color: #4b5563;
+}
+
+.butikker-dot {
+    border-color: #dc2626;
+}
+
+.filter-container {
+    max-width: 1000px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.filter-container select {
+    padding: 8px 12px;
+    border: 1px solid #cbd5d1;
+    border-radius: 8px;
+    background-color: white;
+    color: #173b35;
+    font-size: 14px;
+}
+
+@media (max-width: 700px) {
+    body {
+        margin: 16px;
+    }
+
+    .map-layout {
+        flex-direction: column;
+    }
+
+    .map-container {
+        width: 100%;
+    }
+
+    .legend {
+        box-sizing: border-box;
+        width: 100%;
+        flex-basis: auto;
+    }
+
+    .filter-container {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 8px;
+    }
+
+    #category-filter,
+    #facility-search {
+        box-sizing: border-box;
+        width: 100%;
+    }
+
+    #info-box {
+        padding: 16px;
+    }
+}
+
+#info-box {
+    background-color: white;
+    padding: 24px;
+    margin-top: 24px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+#info-box h2 {
+    color: #0f766e;
+    margin-top: 0;
+    margin-bottom: 12px;
+}
+
+#info-box p {
+    line-height: 1.6;
+    margin-bottom: 8px;
+}
+
+.facility-details {
+    background-color: #f0f7f5;
+    padding: 8px 14px;
+    border-radius: 8px;
+    margin-bottom: 16px;
+}
+
+.facility-details p {
+    margin: 6px 0;
+}
+
+.category-badge {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: bold;
+    background-color: white;
+    border: 1px solid currentColor;
+}
+
+#facility-search {
+    padding: 10px 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font-size: 16px;
+    max-width: 100%;
+}
+
+#facility-search:focus {
+    outline: 2px solid #0f766e;
+    outline-offset: 2px;
+}
