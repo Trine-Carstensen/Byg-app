@@ -36,7 +36,7 @@ const facilities = [
         name: "Red Sky Bar - 18+",
         hotel: "Aqua Vista Resort",
         category: "bar",
-        description: "Adults only bar",
+        description: "Adults only bar. En bar med terrasse og shishaområde. Hotellets oplysninger nævner også, at området er for voksne.",
         left: 81,
         top: 73,
         icon: "🍹"
@@ -54,7 +54,7 @@ const facilities = [
         name: "Colonies a la carte Restaurant",
         hotel: "Aqua Vista Resort",
         category: "Restaurant",
-        description: "Skal bestilles",
+        description: "Skal bestilles. En italiensk à la carte-restaurant. Hotellets FAQ oplyser, at bordreservation er nødvendig. Det er derfor en nyttig detalje at vise i appen.",
         left: 76,
         top: 69,
         icon: "🍽️" 
@@ -99,7 +99,7 @@ const facilities = [
         name: "Soprano Restaurant",
         hotel: "Aqua Vista Resort",
         category: "restaurant",
-        description: "",
+        description: "En restaurant med italiensk mad, herunder pasta, pizza og middelhavsinspirerede retter. Hotellets egen beskrivelse fremhæver den italienske madoplevelse.",
         left: 77,
         top: 53,
         icon: "🍽️" 
@@ -135,7 +135,7 @@ const facilities = [
         name: "Trattoria (Apollo) restaurant",
         hotel: "Aqua Vista Resort",
         category: "restaurant",
-        description: "Kun for apollo gæster",
+        description: "Kun for apollo gæster. Buffetrestaurant omtalt i Apollos hotelbeskrivelse med både internationale retter og lokale nordafrikanske specialiteter",
         left: 71,
         top: 43,
         icon: "🍽️" 
@@ -288,7 +288,7 @@ const facilities = [
         name: "L'Asiatique Restaurant",
         hotel: "Aqua Park Resort",
         category: "restaurant",
-        description: "Den hedder muligvis East-West nu",
+        description: "Den hedder muligvis East-West nu. Restaurant med asiatisk mad.",
         left: 31,
         top: 77,
         icon: "🍽️" 
@@ -387,7 +387,7 @@ const facilities = [
         name: "Tagine Restaurant",
         hotel: "Aqua Blu Resort",
         category: "restaurant",
-        description: "",
+        description: "En orientalsk buffetrestaurant med inspiration fra regionens køkken.",
         left: 60,
         top: 70,
         icon: "🍽️" 
